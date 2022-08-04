@@ -86,47 +86,51 @@ export const TodoList = () => {
 
   return (
     <>
-      <label className="todo-input" htmlFor="description">
-        Description{" "}
-        <input
-          type="text"
-          name="description"
-          value={description}
-          onChange={inputDescriptionHandler}
-        />
-      </label>
-      <label className="todo-input" htmlFor="deadline">
-        Deadline{" "}
-        <input
-          type="date"
-          min={disablePastDate()}
-          name="deadline"
-          value={deadline}
-          onChange={inputDeadlineHandler}
-        />
-      </label>
+      <div className="buttons-container">
+        <label className="todo-input" htmlFor="description">
+          Description{" "}
+          <input
+            type="text"
+            name="description"
+            value={description}
+            onChange={inputDescriptionHandler}
+          />
+        </label>
+        <label className="todo-input" htmlFor="deadline">
+          Deadline{" "}
+          <input
+            type="date"
+            min={disablePastDate()}
+            name="deadline"
+            value={deadline}
+            onChange={inputDeadlineHandler}
+          />
+        </label>
+      </div>
       <p className="error-message">{error}</p>
       <button onClick={addNewTodo}>Add New Todo</button>
-      <ul>
-        {todoState.length ? (
-          todoState.map((todo) => {
-            return (
-              <TodoItem
-                key={todo.id}
-                id={todo.id}
-                description={todo.description}
-                deadline={todo.deadline}
-                status={todo.status}
-                onTodoChecked={onTodoChecked}
-                deleteOnClick={deleteOnClick}
-                updateTodo={updateTodo}
-              />
-            );
-          })
-        ) : (
-          <p>No items</p>
-        )}
-      </ul>
+      <div className="container">
+        <ul className="todo-container">
+          {todoState.length ? (
+            todoState.map((todo) => {
+              return (
+                <TodoItem
+                  key={todo.id}
+                  id={todo.id}
+                  description={todo.description}
+                  deadline={todo.deadline}
+                  status={todo.status}
+                  onTodoChecked={onTodoChecked}
+                  deleteOnClick={deleteOnClick}
+                  updateTodo={updateTodo}
+                />
+              );
+            })
+          ) : (
+            <p>No items</p>
+          )}
+        </ul>
+      </div>
     </>
   );
 };

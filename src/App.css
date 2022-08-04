@@ -23,6 +23,8 @@ li {
 }
 
 .border-component {
+    justify-content: flex-end;
+    display: flex;
     border: #b9cdfb solid 2px;
     border-radius: 3px;
     margin: 5px;
@@ -30,8 +32,14 @@ li {
     text-align: left;
 }
 
-ul {
-    padding: 20px 100px 20px 100px;
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-container {
+    padding-left: 0px;
+    max-width: 700px;
 }
 
 .todo-input {
@@ -61,4 +69,9 @@ input[type="checkbox"] {
 .buttons-container {
     display: flex;
     align-items: center;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
 }
