@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/svitlana-burlaka-portfolio/static/css/main.fa9b0770.css",
+    "main.css": "/svitlana-burlaka-portfolio/static/css/main.51644571.css",
     "main.js": "/svitlana-burlaka-portfolio/static/js/main.c19dd714.js",
     "static/js/787.28cb0dcd.chunk.js": "/svitlana-burlaka-portfolio/static/js/787.28cb0dcd.chunk.js",
     "index.html": "/svitlana-burlaka-portfolio/index.html",
-    "main.fa9b0770.css.map": "/svitlana-burlaka-portfolio/static/css/main.fa9b0770.css.map",
+    "main.51644571.css.map": "/svitlana-burlaka-portfolio/static/css/main.51644571.css.map",
     "main.c19dd714.js.map": "/svitlana-burlaka-portfolio/static/js/main.c19dd714.js.map",
     "787.28cb0dcd.chunk.js.map": "/svitlana-burlaka-portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fa9b0770.css",
+    "static/css/main.51644571.css",
     "static/js/main.c19dd714.js"
   ]
 }
